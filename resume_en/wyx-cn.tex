@@ -1,0 +1,147 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+\moderncvtheme[blue]{classic}  
+\usepackage{xunicode, xltxtra}
+%\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+  
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+\firstname{肖煜东}
+\familyname{}
+\title{}               % optional, remove the line if not wanted
+
+\mobile{18618327879}                    % optional, remove the line if not wanted
+\email{xiaoyudong0512@gmail.com}                      % optional, remove the line if not wanted
+%% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{教育}
+\cventry{2012至今}{硕士}{清华大学}{计算机科学与技术，导师：张磊}{将于 2015 年毕业}{}
+\cventry{2008--2012}{本科}{北京邮电大学}{计算机科学与技术}{}{}  
+
+\section{实习经历}
+\cventry{2014.04-09}{微软亚洲研究院，软件分析组}{数据挖掘实习生}{}{}{基于微软的分布式计算平台COSMOS，参与开发了基于时间序列的新型模式挖掘异常检测系统，优化至稳定版本。}
+\cventry{2012.04-08}{华为诺亚方舟实验室}{数据挖掘实习生}{}{}{基于庞大的历史故障日志，Hadoop平台实现Apriori关联挖掘算法用于电信器件故障分析。}
+\cventry{2011.09-12}{北京人人公司}{iOS开发实习生}{}{}{参与每日推荐iOS客户端两个线上版本的开发，保证了无明显bug。}
+
+\section{社区}
+\cventry{Blog}{\url{imsheridan.com}}{技术博客}{}{}{}
+\cventry{GitHub}{\url{github.com/imsheridan}}{参与和创建过多个开源项目}{}{}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2011~至今}
+{唐茶字节社}
+{iOS, Ruby on Rails}
+{创业项目}{}
+{字节社旨在提供中文世界最好的电子书城。我在字节社中担任兼职开发，主要负责服务器端和一部分~iOS~应用的功能，包括支付购买验证、同步服务、移动应用~Web~界面、云存储相关逻辑、书籍管理、管理后台和合作方销售统计等模块。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2011~至今}
+{ReDroid}
+{Android~底层}
+{研究项目}{}
+{移动平台上的快速数据恢复系统。ReDroid~通过记录并重新触发~UI~事件，恢复用户在移动平台的数据，同时去除恶意应用产生的破坏。为了提高恢复速度，我们设计并实现了~UI~事件快进技术和数据、界面交叉恢复技术。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2009--2010}
+{Cerberus}
+{Xen 虚拟化技术, Linux 内核}
+{研究项目}{}
+{Cerberus~旨在利用虚拟机集群提高多核平台上应用的可伸缩性，并保证系统接口的兼容性。为了减少单一内核中共享数据结构的竞争，Cerberus~将多个操作系统部署在一个虚拟机监控器之上，并为上层应用抽象出一个统一的共享内存和存储接口。测试结果表明在~16~核的服务器上，运行在~Cerberus~上的~Apache~httpd~比在~Linux~上的吞吐高~2.49~倍左右。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2010}
+{ForceField}
+{Python, ANTLR}
+{独立项目}{}
+{设计了~ForceField~函数式语言，并借助~Python~和~ANTLR~为它实现了一个简单的解释器。为了更好的调试~ForceField~脚本，我们还开发了一个在线的调试工具，开发者可以利用它在网页上进行单步跟踪或者查看局部变量等操作。这个项目让我们获得了~2011~年盛大``校园牛人''创新技术大赛一等奖。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2009}
+{阅读进度记录}
+{Python, Django, Google App Engine}
+{独立项目}{}
+{记录用户阅读进度的~Web~应用，可以与豆瓣同步阅读列表。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2008}
+{绩点计算器}
+{Python, wxWidgets}
+{独立项目}{}
+{一个抓取学校查分系统网页，解析课程成绩数据，并计算各类绩点的应用，发布的第一年里下载量超过了~6000~份。}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\section{发表论文}
+\cventry{2014}
+{\textbf{Yudong Xiao}\textnormal{, Jinli Suo, Liheng Bian, Lei Zhang, and Qionghai Dai}}
+{"Automatic Inpainting of Linearly Related Video Frames"}{IEEE International Conference on Image Processing, 2014}
+{}{}{}
+
+\cventry{2014}
+{\textnormal{Jinli Suo, }\textbf{Yudong Xiao}\textnormal{, Liheng Bian, Lei Zhang, and Qionghai Dai}}
+{"Self synchronizing scheme for high speed ghost imaging"}
+{submitted to Optics Letter (OL, IF 3.385)}
+{}{}{}
+\cventry{2014}
+{\textnormal{Tao Yue, Jinli Suo, }\textbf{Yudong Xiao}\textnormal{, Lei Zhang, and Qionghai Dai}}
+{"Image Quality Enhancement Using Original Lens via Optical Computing"}
+{submitted to  Optics Express ((OE, IF 3.546)}
+{}{}{}
+\cventry{2013}
+{\textnormal{Yuqing Lu, Lei Zhang, }\textbf{Yudong Xiao}\textnormal{, and Yangguang Li}}
+{"Simultaneously detecting fake reviews and review spammers using factor graph model"}
+{ACM Web Science 2013}
+{}{}{}
+
+%% \section{助教经验}
+%% \cventry{2011}{计算机系统工程}{}{}{}{}
+%% \cventry{2009,2010}{操作系统}{}{}{}{}
+
+\section{奖项}
+\cventry{2012}{摩根士丹利暑期实习生团队项目最具创意奖}{}{}{}{}
+\cventry{2010}{SAP~大学联盟仪表盘设计大赛一等奖}{}{}{}{}
+\cventry{2010}{盛大``校园牛人''创新技术大赛一等奖}{}{}{}{}
+\cventry{2010}{研究生入学一等奖学金}{}{}{}{}
+%% \cventry{2009}{人民奖学金三等奖}{}{}{}{}
+%% \cventry{2007, 2008}{人民奖学金二等奖}{}{}{}{}
+\cventry{2007}{张江杯~DotA~比赛冠军}{}{}{}{}
+\cventry{2006, 2008}{复旦大学电子竞技大赛星际项目亚军}{}{}{}{}
+%% \cventry{2006}{首届``华夏通信杯''程序设计赛三等奖}{}{}{}{}
+\cventry{2005, 2004}{全国青少年信息学（计算机）奥林匹克分区联赛一等奖}{}{}{}{}
+
+\section{技能}
+\cventry{语言}{Ruby = C = Java > Python > C++}{}{}{}{}
+\cventry{内核}{Linux, Xen, Android}{}{}{}{}
+%% \cventry{应用开发}{Ruby on Rails, iOS}{}{}{}{}
+\cventry{游戏}{星际争霸2（国服、东南亚服大师组）}{}{}{}{}
+\cventry{英语}{CET-6 593 分}{流利的英语读写能力，同时也是~TED~翻译者}{}{}{}
+
+% \cvline{Photography}{\small Digital photography is my newest hobby.}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
